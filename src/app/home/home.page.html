@@ -57,7 +57,7 @@
   </ion-button>
 
   <!-- Play Button -->
-  <ion-button fill="clear" mode="android" *ngIf="lisPlaying" (click)="play()">
+  <ion-button fill="clear" mode="android" *ngIf="!isPlaying" (click)="play()">
     <ion-icon name="play" style="font-size: 40px;"></ion-icon>
   </ion-button>
 
@@ -98,7 +98,7 @@
     </ion-label>
 
     <!-- Play Button -->
-    <ion-button fill="clear" mode="android" *ngIf="lisPlaying" (click)="play()">
+    <ion-button fill="clear" mode="android" *ngIf="!isPlaying" (click)="play()">
       <ion-icon name="play" style="font-size: x-large;"></ion-icon>
     </ion-button>
     <!-- Pause Button -->
@@ -106,7 +106,7 @@
       <ion-icon name="pause" style="font-size: x-large;"></ion-icon>
     </ion-button>
     <!-- Cancel Song Button -->
-    <ion-button fill="clear" mode="android" *ngIf="lisPlaying" (click)="cancel()">
+    <ion-button fill="clear" mode="android" *ngIf="!isPlaying" (click)="cancel()">
       <ion-icon name="cancel" style="font-size: x-large;"></ion-icon>
     </ion-button>
 
